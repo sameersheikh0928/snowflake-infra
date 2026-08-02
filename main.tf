@@ -25,6 +25,7 @@ provider "snowflake" {
   user              = var.snowflake_user
   private_key       = var.snowflake_private_key
   role              = "TERRAFORM_ROLE"
+  authenticator     = "JWT"
 }
 
 provider "aws" {
